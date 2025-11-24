@@ -57,4 +57,18 @@ class LoanAPIController extends Controller
 
         return response()->noContent();
     }
+
+    public function putExtend(int $id)
+    {
+        /*
+         * Validate that the loan is not already overdue.
+            Validate that the additional_days is a positive integer and no more than 2 weeks.
+            Extend the due_at by the specified number of days.
+            Return the updated loan details in the response.
+
+         */
+
+
+
+    }
 }
